@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de Tarefas</h1>
+    </header>
+
+    <main>
+        <!-- Seção de entrada de novas tarefas -->
+        <section aria-labelledby="taskInputSection">
+            <h2 id="taskInputSection" class="sr-only">Adicionar Nova Tarefa</h2>
+            <div class="task-input-container">
+                <label for="taskInput" class="sr-only">Digite uma nova tarefa:</label>
+                <input 
+                    type="text" 
+                    id="taskInput" 
+                    placeholder="Digite uma nova tarefa" 
+                    aria-label="Campo para digitar nova tarefa"
+                >
+                <button 
+                    class="add" 
+                    id="addTaskButton" 
+                    aria-label="Adicionar nova tarefa"
+                >
+                    Adicionar Tarefa
+                </button>
+            </div>
+        </section>
+
+        <!-- Lista de tarefas -->
+        <section aria-labelledby="taskListSection">
+            <h2 id="taskListSection" class="sr-only">Tarefas</h2>
+            <div class="task-list" id="taskList" role="list" aria-live="polite">
+                <!-- As tarefas serão inseridas dinamicamente aqui -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <a href="http://www.linkedin.com/in/felipe-cardoso-vargas" target="_blank" class="styled-link">
+            💻 Felipe Cardoso Vargas
+        </a>        
+      </p>
+        <p>&copy; 2025 Lista de Tarefas. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Link para o arquivo JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
